@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="App">
      <Todoheader onChange={(e)=>setTodos(todos.filter((todo)=>(todo.text).includes(e.target.value)))} 
+    
      />
      <TodoContent todos={todos}
      onDelete={(todo)=>{
@@ -50,7 +51,7 @@ function App() {
         }
       ])
      }} 
-     onChange
+     
      
 
     />

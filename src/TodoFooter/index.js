@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useState} from "react";
 
 function TodoFooter({onAdd}){
     const [text,setText] = useState('')
+//     const [hiden,setHiden] = useState(todo.isCompleted)
+//  const handleChangeCheckbox = ()=>{
+   
+//     return hiden?{todo}: setHiden({todo})
+//  }
     
 return(
     <form onSubmit={(e)=>{
@@ -9,7 +14,9 @@ return(
         onAdd(text)
         setText('')
     }}>
-        <input type = "checkbox" />
+        <input type = "checkbox" 
+        />
+          
         
         <span>Hide all books</span>
         <label><br></br>

@@ -7,6 +7,7 @@ return(
             <button class = "btn" onClick={()=>{
                 onDelete(todo)
             }}>delete</button>
+            <hr></hr>
         </label>
     </div>
 )
